@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Hackathon Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚀 College Hackathon</h1>
+        <p class="subtitle">Register now and showcase your innovation!</p>
+
+        <form id="registrationForm">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="college">College Name</label>
+            <input type="text" id="college" placeholder="Enter your college name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone"
+                   placeholder="Enter 10-digit phone number"
+                   pattern="[0-9]{10}" required>
+
+            <label for="team">Team Name</label>
+            <input type="text" id="team" placeholder="Enter your team name" required>
+
+            <label for="members">Number of Team Members</label>
+            <select id="members" required>
+                <option value="">Select members</option>
+                <option value="1">1 Member</option>
+                <option value="2">2 Members</option>
+                <option value="3">3 Members</option>
+                <option value="4">4 Members</option>
+            </select>
+
+            <label for="domain">Hackathon Domain</label>
+            <select id="domain" required>
+                <option value="">Select a domain</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="IoT">Internet of Things (IoT)</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Open Innovation">Open Innovation</option>
+            </select>
+
+            <label for="idea">Project Idea</label>
+            <textarea id="idea" rows="4"
+                      placeholder="Describe your project idea"
+                      required></textarea>
+
+            <button type="submit">Register Now</button>
+        </form>
+
+        <p id="message" role="status"></p>
+
+        <footer>
+            © 2026 College Hackathon | Innovate. Create. Inspire.
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
